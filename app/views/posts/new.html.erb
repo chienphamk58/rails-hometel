@@ -1,0 +1,9 @@
+<h1>New Post</h1>
+<hr>
+
+<%= form for @post do |f| %>
+    <%= f.label :desc %>
+    <%= f.text_area :desc %>
+    <br>
+    <%= f.submit %>
+<% end %>
