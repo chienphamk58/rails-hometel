@@ -528,7 +528,6 @@ ActionView::Template::Error (undefined method `desc' for #<Post id: nil, created
   app/views/posts/new.html.erb:6:in `block in _app_views_posts_new_html_erb__2615524589666084557_69857625851240'
   app/views/posts/new.html.erb:4:in `_app_views_posts_new_html_erb__2615524589666084557_69857625851240'
 
-
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
@@ -593,6 +592,7 @@ Processing by PostsController#new as HTML
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
 Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.2ms)
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
 Migrating to AddNameAndAge (20170419101958)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "name" varchar[0m
@@ -627,6 +627,7 @@ Migrating to AddNameAndAge (20170419101958)
             WHERE name='index_users_on_name' AND type='index'
 
   [1m[36m (0.1ms)[0m  [1m            SELECT sql
+
             FROM sqlite_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
             UNION ALL
@@ -641,6 +642,7 @@ Migrating to AddNameAndAge (20170419101958)
             SELECT sql
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
+
 
 
 
