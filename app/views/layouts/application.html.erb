@@ -37,6 +37,9 @@
                     </li>
                     <%- if current_user %>
                     <li>
+                     <%= link_to "Profile", edit_user_registration_path %>
+                    </li>
+                    <li>
                       <%= link_to "Logout", destroy_user_session_path, method: :delete, confirm: "Are you sure?" %>
                     </li>
                     <% else %>
@@ -69,8 +72,9 @@
             </div>
         </div>
         <!-- /.row -->
-
+    <%= render 'layouts/footer' %>
     </div>
+    
     <style>
     body {
         padding-top: 70px;
