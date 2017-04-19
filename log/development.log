@@ -592,3 +592,269 @@ Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (1.9ms)
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
 Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddNameAndAge (20170419101958)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "name" varchar[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "age" integer
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (2.8ms)[0m  CREATE UNIQUE INDEX "index_users_on_name" ON "users" ("name")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170419101958"]]
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_name' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_name' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:23:43 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 507ms (Views: 498.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:25:27 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 107ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 14.162.182.214 at 2017-04-19 10:25:28 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (82.0ms)
+Completed 200 OK in 173ms (Views: 141.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_up" for 14.162.182.214 at 2017-04-19 10:25:29 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 75ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 14.162.182.214 at 2017-04-19 10:25:42 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bbceiLohv6xwA8MOJDBpl48YYuCmbsz3RHLpwuwa6IzFrVXvptEaH6dWwweo5W7KpFMkvlC5Ymt6z81buCyuzQ==", "user"=>{"email"=>"admin@123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"admin", "age"=>"20"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'admin@123' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "name", "age", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "admin@123"], ["encrypted_password", "$2a$11$zP4LLMVN8/DcObS4TWPvNu.II604MFZ7g8ERZJdtnbdwakWSN9rSW"], ["name", "admin"], ["age", 20], ["created_at", "2017-04-19 10:25:43.149930"], ["updated_at", "2017-04-19 10:25:43.149930"]]
+  [1m[36m (14.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-04-19 10:25:43.168486"], ["current_sign_in_at", "2017-04-19 10:25:43.168486"], ["last_sign_in_ip", "14.162.182.214"], ["current_sign_in_ip", "14.162.182.214"], ["sign_in_count", 1], ["updated_at", "2017-04-19 10:25:43.170040"], ["id", 3]]
+  [1m[35m (12.1ms)[0m  commit transaction
+Redirected to https://ruby-hometel-trantuananh2008.c9users.io/
+Completed 302 Found in 235ms (ActiveRecord: 28.2ms)
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:25:43 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:25:45 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 72ms (Views: 62.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:28:08 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 504ms (Views: 487.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:28:11 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 101ms (Views: 97.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:30:35 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/users" for 14.162.182.214 at 2017-04-19 10:30:50 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WzwrcPtcfcrCv6pSaElLhxZ9QBdrtf0kumdHBhX8gIHzJmAX56zYeRXqqlvknEzaPTYGSZ1iU7iE2mOfQcrGwA==", "user"=>{"email"=>"admin@123", "name"=>"Ain", "age"=>"20"}, "commit"=>"Save Change"}
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 279ms (Views: 65.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:31:01 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:31:02 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/users/password" for 14.162.182.214 at 2017-04-19 10:32:59 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9N0EJzlPEN2h03AebVJCS4PfekVkgA5tXAXTbE+Hy7dcx09AJb+1bnaGcBfhh0UWqJQ8G5JXoPFiuPf1G7GN9g==", "user"=>{"reset_password_token"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Change Password"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Redirected to https://ruby-hometel-trantuananh2008.c9users.io/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:33:00 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:33:05 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 120ms (Views: 117.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:34:16 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 102ms (Views: 97.9ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/users" for 14.162.182.214 at 2017-04-19 10:34:29 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i+v0dUpQYCZ7isIBLvq0e4WF9qrcOPcVEZZitOnUr5sj8b8SVqDFlazfwgiiL7Mmrs6w9CrvWYkvK0YtveLp2g==", "user"=>{"email"=>"admin@123", "name"=>"Ain", "age"=>"20", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]"}, "commit"=>"Save Change"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["name", "Ain"], ["updated_at", "2017-04-19 10:34:29.436831"], ["id", 3]]
+  [1m[36m (13.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://ruby-hometel-trantuananh2008.c9users.io/
+Completed 302 Found in 161ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:34:29 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:34:33 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:34:39 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:34:41 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 74ms (Views: 71.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:40:32 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 14.162.182.214 at 2017-04-19 10:40:35 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 14.162.182.214 at 2017-04-19 10:40:37 +0000
+Cannot render console from 14.162.182.214! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.2ms)
