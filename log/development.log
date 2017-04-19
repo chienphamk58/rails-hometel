@@ -592,3 +592,642 @@ Processing by PostsController#new as HTML
   Rendered posts/new.html.erb within layouts/application (1.9ms)
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
 Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:05:32 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 2614ms (Views: 2602.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:05:42 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 116ms (Views: 107.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:05:45 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 58.187.166.28 at 2017-04-19 13:05:46 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (6.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 106ms (Views: 90.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 13:05:48 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:05:50 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 68ms (Views: 67.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:17:34 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 525ms (Views: 514.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:32:16 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 548ms (Views: 539.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:33:08 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2214ms (Views: 2204.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6165269de5de0005fc22374c4b7d6d2cbe3fba301650424b2e03b5c3ff94eb25.css?body=1" for 58.187.166.28 at 2017-04-19 13:33:11 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:34:11 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 453ms (Views: 443.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:45:35 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:45:35 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 68ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:45:38 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:45:40 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:46:51 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 574ms (Views: 563.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:47:19 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 422ms (Views: 413.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:47:56 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 422ms (Views: 412.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:48:37 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 469ms (Views: 458.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:49:12 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 452ms (Views: 442.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:49:57 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:49:58 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:50:07 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:51:38 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 422ms (Views: 412.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:51:44 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:51:45 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:51:46 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:51:48 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:51:50 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 86.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:51:54 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 63.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:51:56 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:51:57 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:52:00 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 13:52:03 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 136ms (Views: 119.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:52:05 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:53:39 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (34.1ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 2401ms (Views: 2386.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-cf73e4760e82f0a1a56d098333f897a9067b4042462f1ff2a1dc26afd3327319.css?body=1" for 58.187.166.28 at 2017-04-19 13:53:42 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 13:53:56 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 166ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:53:57 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:57:26 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (63.5ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 3780ms (Views: 3735.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-40a16ba836b9683e592d6e9c695db274d95456d066c6692ca6212fe3735a4806.css?body=1" for 58.187.166.28 at 2017-04-19 13:57:30 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:57:48 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2450ms (Views: 2448.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-32aa365976f418ca1f167a4c9d127225a71c240129d684a477bb5e596329fccc.css?body=1" for 58.187.166.28 at 2017-04-19 13:57:51 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:58:21 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (36.7ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 2583ms (Views: 2564.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-93f69f845dc2f2de4b50d73f302ab4d3ab096fa6aa4de4ef296a283f3eca8ec8.css?body=1" for 58.187.166.28 at 2017-04-19 13:58:51 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 13:59:44 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (31.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 407ms (Views: 392.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 14:00:37 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (31.1ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 2144ms (Views: 2128.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-88a40d927aeaca5fa7a8693d82dd78af353f333386b44840aa56e9e2e73a1525.css?body=1" for 58.187.166.28 at 2017-04-19 14:00:40 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 14:01:08 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (32.0ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 2290ms (Views: 2273.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-9744a625105eff39555a842ae8b912bbe9b4e4252c043e6fd18687f0d6b62640.css?body=1" for 58.187.166.28 at 2017-04-19 14:01:11 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 14:02:10 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (42.9ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 2544ms (Views: 2528.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-96e23a47ae13b95b285217d0de6178339995dba1afb8518d7d40796dae5d7208.css?body=1" for 58.187.166.28 at 2017-04-19 14:02:29 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 14:03:11 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (33.2ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 514ms (Views: 496.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 14:04:00 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (48.8ms)
+  Rendered layouts/_footer.html.erb (2.5ms)
+Completed 200 OK in 3262ms (Views: 3238.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-b7535b31862016e89cb67a06e254302454c0694c96fde4e12e167b017ac83286.css?body=1" for 58.187.166.28 at 2017-04-19 14:04:03 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 58.187.166.28 at 2017-04-19 14:04:14 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 58.187.166.28 at 2017-04-19 14:04:18 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/registrations/new.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 134ms (Views: 116.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:04:21 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 98ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:05:07 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (64.0ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 621ms (Views: 569.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:09:47 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (9.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (53.3ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 2389ms (Views: 2351.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-386f347279c04648047b9741b26acb913787d77caa5786b32121e063c10388e2.css?body=1" for 58.187.166.28 at 2017-04-19 14:09:50 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:10:08 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (55.6ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 2772ms (Views: 2736.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-0bce6240ba1e3ae428ea1489710d18bf34605e1c20829dd554054be8786d9260.css?body=1" for 58.187.166.28 at 2017-04-19 14:10:11 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:10:50 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (46.7ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 2188ms (Views: 2155.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-74fe133029aad75ae9cb01ef245fac0469d59320c326b0be5d64a3f2823db45e.css?body=1" for 58.187.166.28 at 2017-04-19 14:10:53 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:11:10 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (47.5ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 2211ms (Views: 2177.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-9156e2ce586e1f3332d28667159d2a239c462e15006ec059d74bf6353d0dd700.css?body=1" for 58.187.166.28 at 2017-04-19 14:11:13 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:12:07 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (46.4ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 436ms (Views: 402.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:12:48 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (9.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (52.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 499ms (Views: 460.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:13:04 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (48.7ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 486ms (Views: 454.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:14:26 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (13.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (73.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 2440ms (Views: 2391.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-269ab62bcfd45772ef7356fd57603387eb3d30d2290a215fb0cdb9ff1eca0361.css?body=1" for 58.187.166.28 at 2017-04-19 14:14:29 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:15:10 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (47.4ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 2406ms (Views: 2370.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-c92295d96d4e0976ece4236c13186fc2f7b44a79684eed0f3dbac53149321b9a.css?body=1" for 58.187.166.28 at 2017-04-19 14:15:12 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:15:37 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (11.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (59.6ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 513ms (Views: 474.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:16:10 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (8.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (69.5ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 3152ms (Views: 3104.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-9aa85530263a4bd713ac947416424f798058dcc9cdee53bf642a015798f7fbe8.css?body=1" for 58.187.166.28 at 2017-04-19 14:16:13 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 58.187.166.28 at 2017-04-19 14:17:40 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/shared/_links.html.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/devise-4.2.1/app/views/devise/sessions/new.html.erb within layouts/application (62.7ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 3173ms (Views: 3128.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 14:18:03 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 201ms (Views: 188.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for 58.187.166.28 at 2017-04-19 14:23:04 +0000
+Cannot render console from 58.187.166.28! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 100ms (Views: 98.4ms | ActiveRecord: 0.0ms)
