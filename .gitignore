@@ -17,3 +17,6 @@
 /tmp
 tmp/
 log/
+
+.idea/
+
