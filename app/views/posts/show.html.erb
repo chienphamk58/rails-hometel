@@ -1,2 +1,21 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div style="padding: 20px;float: left; width: 60%;" class=".col-xs-12 .col-sm-6 .col-md-8" >
+  <h1><%= @post.post_address %></h1>
+  <span><%= @post.user_id %></span>
+  <span style="float: right; border-radius: 1000px; border: 1px solid black; padding: 5px"><%= @post.user_id %></span>
+  <hr>
+  <div>
+    <p ><%= @post.post_intro %></p>
+  </div>
+  <hr>
+</div>
+<div class=".col-xs-6 .col-md-4" style="width: 40%;float: right">
+  <div style="height: 400px;width:100%;background-color: #FFE623">
+    <img src="..." class="img-responsive" alt="Responsive image"  style="">
+
+  </div>
+  <hr>
+  <div align="center">
+    <h3><%= @post.post_price %></h3>
+    <h4><%= @post.post_phone %></h4>
+  </div>
+</div>
