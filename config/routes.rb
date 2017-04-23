@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :roomtypes
   resources :reviews
   root 'posts#index'
   resources :posts

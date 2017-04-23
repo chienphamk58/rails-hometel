@@ -11,24 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170419165613) do
+ActiveRecord::Schema.define(version: 20170423093230) do
 
   create_table "posts", force: :cascade do |t|
-    t.string   "post_address", null: false
-    t.integer  "post_price",   null: false
-    t.string   "post_phone",   null: false
-    t.integer  "user_id",      null: false
+    t.string   "post_district"
+    t.string   "post_road"
+    t.string   "post_city"
+    t.integer  "post_price",    null: false
+    t.string   "post_phone",    null: false
+    t.integer  "user_id",       null: false
+    t.integer  "roomtype_id",   null: false
     t.string   "post_type"
     t.string   "post_intro"
     t.string   "post_picture"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "reviews", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "post_id"
     t.string   "review"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "roomtypes", force: :cascade do |t|
+    t.string   "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,6 +57,7 @@ ActiveRecord::Schema.define(version: 20170419165613) do
     t.datetime "updated_at",                          null: false
     t.string   "name"
     t.integer  "age"
+    t.string  "avatar"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
