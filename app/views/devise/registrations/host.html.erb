@@ -1,0 +1,23 @@
+<h2>BECOME A HOST</h2>
+
+<%= form_for @user do |f| %>
+  <%= devise_error_messages! %>
+  
+    <div class="field form-group">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone, autofocus: true,class:"form-control",placeholder:"Phone Number",style:"width:40%" %>
+    </div>
+    <br />
+    <div class="field form-group">
+    <%= f.label :credit %><br />
+    <%= f.text_field :credit, autofocus: true,class:"form-control",placeholder:"Credit Card Number",style:"width:40%" %>
+    </div>
+    <br />
+    current_user.update_attribute :admin, true
+    <div class="actions">
+    <%= f.submit "Become A Host",class:"btn btn-default" %>
+    </div>
+    <hr>
+
+
+<% end %>

@@ -11,21 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423093230) do
+ActiveRecord::Schema.define(version: 20170424171701) do
 
   create_table "posts", force: :cascade do |t|
-    t.string   "post_district"
-    t.string   "post_road"
-    t.string   "post_city"
-    t.integer  "post_price",    null: false
-    t.string   "post_phone",    null: false
-    t.integer  "user_id",       null: false
-    t.integer  "roomtype_id",   null: false
+    t.string   "post_address", null: false
+    t.integer  "post_price",   null: false
+    t.string   "post_phone",   null: false
+    t.integer  "user_id",      null: false
     t.string   "post_type"
     t.string   "post_intro"
     t.string   "post_picture"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -43,21 +40,26 @@ ActiveRecord::Schema.define(version: 20170423093230) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                  default: "",    null: false
+    t.string   "encrypted_password",     default: "",    null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,     null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
     t.string   "name"
     t.integer  "age"
-    t.string  "avatar"
+    t.boolean  "host"
+    t.boolean  "superadmin_role",        default: false
+    t.boolean  "host_role",              default: false
+    t.boolean  "user_role",              default: true
+    t.string   "phone"
+    t.string   "credit"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
