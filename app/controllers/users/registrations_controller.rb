@@ -16,12 +16,24 @@ class Users::RegistrationsController < Devise::RegistrationsController
         @user = current_user
 
       current_user.update_attribute :host_role, true
+      respond_to do |format|
+      format.html { redirect_to new_post_path, notice: 'You have Beomce a host, now create a Post!' }
+    end
   end
 
   def host
     # super
     @user = current_user
-    redirect_to users_tohost_path
+    
+    # respond_to do |format|
+    # if @user.update
+    # format.html { redirect_to users_tohost_path }
+  
+    # else
+    # format.html {render 'users/host' }
+      
+    # end
+    # end
   end
   # GET /resource/edit
   # def edit
