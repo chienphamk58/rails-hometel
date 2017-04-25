@@ -6,6 +6,10 @@ gem 'rails', '4.2.5'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
+gem 'cancancan'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem "paperclip", "~> 5.0.0"

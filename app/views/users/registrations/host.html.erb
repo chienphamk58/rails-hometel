@@ -1,0 +1,33 @@
+<h2>BECOME A HOST</h2>
+
+<%= form_for(resource, as: resource_name, :url => users_tohost_path, html: { method: :get }) do |f| %>
+  <%= devise_error_messages! %>
+
+  
+    <div class="field form-group">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone, autofocus: true,class:"form-control",placeholder:"Phone Number",style:"width:40%" %>
+    </div>
+    <br />
+    <div class="field form-group">
+    <%= f.label :credit %><br />
+    <%= f.text_field :credit, autofocus: true,class:"form-control",placeholder:"Credit Card Number",style:"width:40%" %>
+    </div>
+    <br />
+    <div>
+    <%= f.hidden_field :host_role, :value => true %>
+    </div>
+      <div class="field form-group">
+    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :current_password, autocomplete: "off",class:"form-control",placeholder:"Current Password",style:"width:40%" %>
+      </div>
+      <br />
+
+    <div class="actions">
+    <%= f.submit "Become A Host",class:"btn btn-default" %>
+    </div>
+    <hr>
+
+
+<% end %>
+
