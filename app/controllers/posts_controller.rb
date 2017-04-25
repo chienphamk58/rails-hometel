@@ -7,10 +7,15 @@ class PostsController < ApplicationController
 
   def index
     @post = Post.all
+    if params[:search]
+      @posts = Post.search(params[:search]).order("created_at DESC")
+    else
+      @posts = Post.all.order('created_at DESC')
+    end
   end
 
   def show
-
+    @post_comment = PostComment.new
   end
   
   def create
@@ -28,7 +33,7 @@ class PostsController < ApplicationController
     end
       
   end
-
+  
   private
   def set_post
     @post = Post.find(params[:id])
