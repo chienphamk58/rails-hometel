@@ -7,32 +7,21 @@
         <div class="col-md-4">
             <div class="ui card">
                 <div class="thumbnail">
-                    <%= image_tag post.post_picture %>
+
+                    <%= image_tag post.post_picture  %>
                 </div>
                 <div class ="content">
-                  <%= link_to 'Address: '+post.post_address, post, class:"header" %>
+                  <%= link_to 'Address: '+post.post_road+', '+post.post_district+', '+post.post_city, post, class:"header" %>
                 <div class="description">
-						      Phone: <%= post.post_phone %>
+						      Phone: <%= post.post_phone %><br>
+						      Price: <%= post.post_price %>¥
 					      </div>
-          			<div class="description">
-          				User ID: <%= post.user_id %>
           			</div>
-          			<div class="description">
-          				Type: <%= post.post_type %>
           			</div>
-          			<div class="description">
-          				Intro: <%= post.post_intro %>
-          			</div>
-          			<hr>
-          			<div class="description">
-          				Price: <%= post.post_price %>$
-          			</div>
+
                 </div>
                 
             </div>
         </div>
         <% end %>
         
-    </div>
-
-</div>
