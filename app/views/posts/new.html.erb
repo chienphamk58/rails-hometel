@@ -17,7 +17,7 @@
     
     <div class="field form-group">
       <%= f.label :roomtype %><br />
-      <%= select_tag :roomtype, options_for_select(['Vila',Vila])  %>
+      <%= select_tag :roomtype, "<option value='Vila'>Vila</option><option value='Apartment'>Apartment</option><option value='Single Room'>Single Room</option>".html_safe  %>
 
     </div>
     
