@@ -1,7 +1,19 @@
 <div style="padding: 20px;float: left; width: 60%;" class=".col-xs-12 .col-sm-6 .col-md-8" >
-  <h1><%= @post.post_address %></h1>
+
   <span><%= @post.user_id %></span>
   <span style="float: right; border-radius: 1000px; border: 1px solid black; padding: 5px"><%= @post.user_id %></span>
+    
+    <hr>
+  <div>
+    <p ><%= @post.post_roomtype%></p>
+  </div>
+  <hr>
+  <hr>
+  <div>
+    <p ><%= @post.post_road %>, <%= @post.post_district %>, <%= @post.post_city %></p>
+  </div>
+  <hr>
+  
   <hr>
   <div>
     <p ><%= @post.post_intro %></p>
@@ -10,31 +22,13 @@
 </div>
 <div class=".col-xs-6 .col-md-4" style="width: 40%;float: right">
   <div style="height: 400px;width:100%;background-color: #FFE623">
-    <!--<img src="..." class="img-responsive" alt="Responsive image"  style="">-->
-      <%= image_tag @post.post_picture %>
+  
+      <%= image_tag @post.post_picture, style:"height: 400px;width:100%" %>
   </div>
   <hr>
   <div align="center">
-    <h3><%= @post.post_price %></h3>
-    <h4><%= @post.post_phone %></h4>
+    <h3><%= @post.post_price %> ¥</h3>
+    <h4>Phone: <%= @post.post_phone %></h4>
   </div>
 </div>
-
-<h2>Comment Form</h2>
-<%= form_for(@post_comment) do |f| %>
-<div class="field">
-  <%= f.label :comment %><br />
-  <%= f.text_field :comment %>
-  <%= f.hidden_field :post_id, :value => @post.id%>
-</div>
-  <div class="action">
-    <%= f.submit %>
-  </div>
-<% end %>
-<h2>List Comment</h2>
-<ul>
-  <% @post.post_comment.each do |post_comment|%>
-    <li><%= post_comment.comment %>
-      (<i><%= post_comment.user_id %></i>)</li>
-<% end %>
-</ul>
+ 

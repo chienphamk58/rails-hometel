@@ -7,10 +7,10 @@ class CreatePosts < ActiveRecord::Migration
       t.integer :post_price, null: false
       t.string :post_phone, null: false
       t.integer :user_id, null: false
-      t.integer :roomtype_id, null: false
       t.string :post_type
       t.string :post_intro
       t.string :post_picture
+      t.string :post_roomtype
       t.timestamps null: false
     end
   end

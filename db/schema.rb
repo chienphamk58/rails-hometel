@@ -14,15 +14,18 @@
 ActiveRecord::Schema.define(version: 20170424171701) do
 
   create_table "posts", force: :cascade do |t|
-    t.string   "post_address", null: false
-    t.integer  "post_price",   null: false
-    t.string   "post_phone",   null: false
-    t.integer  "user_id",      null: false
+    t.string   "post_city"
+    t.string   "post_district"
+    t.string   "post_road"
+    t.integer  "post_price",    null: false
+    t.string   "post_phone",    null: false
+    t.integer  "user_id",       null: false
     t.string   "post_type"
     t.string   "post_intro"
     t.string   "post_picture"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "post_roomtype"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "reviews", force: :cascade do |t|

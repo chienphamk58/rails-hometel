@@ -3,29 +3,38 @@
 
 <%= form_for(@post, {multipart: true}) do |f| %>
     <div class="field form-group">
-      <%= f.label :post_address %><br />
-      <%= f.text_field :post_address, class:"form-control",placeholder:"Address",style:"width:60%" %>
+      <%= f.label :address %><br />
+      <%= f.text_area :post_road, class:"form-control",placeholder:"Road",style:"width:60%" %>
+      <%= f.text_area :post_district, class:"form-control",placeholder:"District",style:"width:60%" %>
+      <%= f.text_area :post_city, class:"form-control",placeholder:"City",style:"width:60%" %>
     </div>
-    <br />
-
+    <br/>
+ 
     <div class="field form-group">
-      <%= f.label :post_price %><br />
+      <%= f.label :price %><br />
       <%= f.number_field :post_price,class:"form-control",placeholder:"Price",style:"width:25%"%>
     </div>
+    
+    <div class="field form-group">
+      <%= f.label :roomtype %><br />
+      <%= select_tag :roomtype, "<option value='Vila'>Vila</option><option value='Apartment'>Apartment</option><option value='Single Room'>Single Room</option>".html_safe  %>
+
+    </div>
+    
     <br />
 
     <div class="field form-group">
-      <%= f.label :post_phone %><br />
+      <%= f.label :phone %><br />
       <%= f.text_field :post_phone,class:"form-control",placeholder:"Phone" ,style:"width:25%"%>
     </div>
 
     <div class="field form-group">
-      <%= f.label :post_intro %>
+      <%= f.label :description %>
       <%= f.text_area :post_intro,rows:"5", autocomplete: "off",class:"form-control",placeholder:"Describe",style:"width:60%" %>
     </div>
 
     <div class="field form-group">
-      <%= f.label :post_picture %><br />
+      <%= f.label :picture %><br />
       <%= f.file_field :post_picture,class:"form-control" ,style:"width:60%"%>
     </div>
 
