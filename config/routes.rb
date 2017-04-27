@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :post_comments
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :roomtypes
   resources :reviews
