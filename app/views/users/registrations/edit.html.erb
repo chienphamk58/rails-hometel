@@ -1,8 +1,13 @@
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true}) do |f| %>
   <%= devise_error_messages! %>
-
+  
+  <div class="field form-group">
+      <%= f.label :avatar %><br />
+      <%= image_tag @user.avatar %>
+      <%= f.file_field :avatar,class:"form-control" ,style:"width:60%"%>
+    </div>
   <div class="field form-group">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true,class:"form-control",placeholder:"Email",style:"width:40%" %>
@@ -12,7 +17,6 @@
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
         <br />
-
     <% end %>
 
   

@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170424171701) do
     t.integer  "post_price",    null: false
     t.string   "post_phone",    null: false
     t.integer  "user_id",       null: false
+
     t.string   "post_type"
     t.string   "post_intro"
     t.string   "post_picture"
@@ -63,6 +64,7 @@ ActiveRecord::Schema.define(version: 20170424171701) do
     t.boolean  "user_role",              default: true
     t.string   "phone"
     t.string   "credit"
+    t.string   "avatar"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
