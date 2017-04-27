@@ -39,7 +39,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
     def permit_post
-        params.require(:post).permit(:post_address,:post_price,:post_phone,:post_intro,:post_picture)
+        params.require(:post).permit(:post_road,:post_city,:post_district,:post_roomtype,:post_price,:post_phone,:post_intro,:post_picture)
     end
   
   
