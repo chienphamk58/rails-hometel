@@ -3,15 +3,23 @@
 
 <%= form_for(@post, {multipart: true}) do |f| %>
     <div class="field form-group">
-      <%= f.label :post_address %><br />
-      <%= f.text_field :post_address, class:"form-control",placeholder:"Address",style:"width:60%" %>
+      <%= f.label :post_road %><br />
+      <%= f.text_field :post_road, class:"form-control",placeholder:"Road",style:"width:60%" %>
+      <%= f.text_field :post_district, class:"form-control",placeholder:"District",style:"width:60%" %>
+      <%= f.text_field :post_city, class:"form-control",placeholder:"City",style:"width:60%" %>
     </div>
-    <br />
+    <br/>
 
     <div class="field form-group">
       <%= f.label :post_price %><br />
       <%= f.number_field :post_price,class:"form-control",placeholder:"Price",style:"width:25%"%>
     </div>
+    
+    <div class="field form-group">
+      <%= f.label :roomtype_id %><br />
+      <%= f.number_field :roomtype_id,class:"form-control",placeholder:"Room Type",style:"width:25%"%>
+    </div>
+    
     <br />
 
     <div class="field form-group">
